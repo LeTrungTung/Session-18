@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="Bai1.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="banner">
+        <img
+          src="./images/tra-sua-nuong-hap-dan.jpg"
+          alt=""
+          id="idbanner"
+        />
+      </div>
+      <div class="searchProduct">
+        <input
+          type="text"
+          id="idinput"
+          placeholder="Nhập nội dung tìm kiếm"
+        />
+        <button onclick="handleSearch(x)" id="id-search">
+          Search
+        </button>
+      </div>
+
+      <div class="areaUpdate">
+        <div class="areaAddProduct">
+          <h2>Thêm 1 thức uống mới</h2>
+          <div class="addProduct">
+            <label for="">ID sản phẩm</label>
+            <input type="text" id="id-product" />
+          </div>
+          <div class="addProduct">
+            <label for="">Hình ảnh sản phẩm</label>
+            <input type="file" id="id-image" />
+          </div>
+          <div class="addProduct">
+            <label for="">Tên sản phẩm</label>
+            <input type="text" id="id-name" />
+          </div>
+
+          <div class="addProduct">
+            <label for="">Giá sản phẩm</label>
+            <input type="number" id="id-price" />
+          </div>
+
+          <div class="addNew">
+            <button onclick="handleAdd()" id="btnAddNew">
+              Thêm sản phẩm mới
+            </button>
+          </div>
+        </div>
+        <div class="areaEditProduct">
+          <h2>Sửa 1 sản phẩm</h2>
+          <div class="addProduct">
+            <label for="">ID sản phẩm</label>
+            <input type="text" id="id-edit" />
+          </div>
+          <div class="addProduct">
+            <label for="">Hình ảnh sản phẩm</label>
+            <input type="file" id="image-edit" />
+          </div>
+          <div class="addProduct">
+            <label for="">Tên sản phẩm</label>
+            <input type="text" id="name-edit" />
+          </div>
+
+          <div class="addProduct">
+            <label for="">Giá sản phẩm</label>
+            <input type="number" id="price-edit" />
+          </div>
+
+          <div class="editProducts">
+            <button onclick="saveProduct()" id="btnEdit">
+              Sửa sản phẩm
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <h1>Sản phẩm nổi bật</h1>
+      <table cellpadding="20">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Image</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="./images/Product_1.jfif" /></td>
+            <td>Gong cha</td>
+            <td>40000</td>
+            <td><button>Edit</button></td>
+            <td><button>Delete</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="./images/Product_2.jfif" /></td>
+            <td>Black Sugar</td>
+            <td>35000</td>
+            <td><button>Edit</button></td>
+            <td><button>Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="Bai1.js"></script>
+  </body>
+</html>

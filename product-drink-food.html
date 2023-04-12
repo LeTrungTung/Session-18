@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="banner">
+        <img src="./images/banner.jfif" alt="" />
+      </div>
+      <div class="slogan">COFFE NGON NHẤT</div>
+      <div class="form-add">
+        <h2>Thêm 1 thức uống mới</h2>
+        <div class="form-card">
+          <label for="id-product">ID sản phẩm</label>
+          <input type="file" name="imageUrl" id="id-product" />
+        </div>
+        <div class="form-card">
+          <label for="image">Hình ảnh</label>
+          <input type="file" name="imageUrl" id="image" />
+        </div>
+        <div class="product-card">
+          <label for="name">Tên</label>
+          <input type="text" name="name" id="product-name" />
+        </div>
+        <div class="product-card">
+          <label for="price">Giá bán</label>
+          <input type="text" name="price" id="price" />
+        </div>
+      </div>
+
+      <div class="form-edit">
+        <div>
+          <h2>Sửa sản phẩm</h2>
+        </div>
+      </div>
+      <table>
+        <caption>
+          Danh mục sản phẩm
+        </caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Hình ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="./images/Product_1.jfif" alt="" /></td>
+            <td>Gong cha</td>
+            <td>40000</td>
+            <td><button>Edit</button><button>Delete</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="./images/Product_2.jfif" alt="" /></td>
+            <td>Black Sugar</td>
+            <td>30000</td>
+            <td><button>Edit</button><button>Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+    <script src="product.js"></script>
+  </body>
+</html>
